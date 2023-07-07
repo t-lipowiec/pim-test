@@ -1,16 +1,16 @@
 <?php
 
-    namespace App\Controller\Test;
+    namespace App\Controller\Custom;
 
     use Pimcore\Controller\FrontendController;
     use Symfony\Bridge\Twig\Attribute\Template;
     use Symfony\Component\HttpFoundation\Request;
     use Symfony\Component\HttpFoundation\Response;
 
-    class TestController extends FrontendController
+    class CustomController extends FrontendController
     {
-        public function testAction(Request $request): Response
+        public function customAction(Request $request):Response
         {
-            return $this->render('test/test.html.twig');
+            return $this->render('about/about.html.twig');
         }
     }

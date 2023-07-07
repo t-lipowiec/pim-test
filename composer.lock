@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e40d14f7a30e1962e1e8936eeb8ce329",
+    "content-hash": "65b1e00730a1a252cff547379d88cb89",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3950,21 +3950,21 @@
         },
         {
             "name": "pimcore/admin-ui-classic-bundle",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/admin-ui-classic-bundle.git",
-                "reference": "437f0686f8088043a145bd2c89f446fb0d24c9d0"
+                "reference": "5fcd19bdc89a3fe4cb8ad8c356590e1e4740c743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/437f0686f8088043a145bd2c89f446fb0d24c9d0",
-                "reference": "437f0686f8088043a145bd2c89f446fb0d24c9d0",
+                "url": "https://api.github.com/repos/pimcore/admin-ui-classic-bundle/zipball/5fcd19bdc89a3fe4cb8ad8c356590e1e4740c743",
+                "reference": "5fcd19bdc89a3fe4cb8ad8c356590e1e4740c743",
                 "shasum": ""
             },
             "require": {
                 "cbschuld/browser.php": "^1.9.6",
-                "pimcore/pimcore": "^11.0",
+                "pimcore/pimcore": "^11.0.3",
                 "symfony/webpack-encore-bundle": "^1.7"
             },
             "require-dev": {
@@ -3995,9 +3995,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pimcore/admin-ui-classic-bundle/issues",
-                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.0.2"
+                "source": "https://github.com/pimcore/admin-ui-classic-bundle/tree/v1.0.3"
             },
-            "time": "2023-06-21T12:25:55+00:00"
+            "time": "2023-07-06T14:46:13+00:00"
         },
         {
             "name": "pimcore/pimcore",
@@ -13312,6 +13312,99 @@
                 }
             ],
             "time": "2023-04-25T10:46:17+00:00"
+        },
+        {
+            "name": "symfony/maker-bundle",
+            "version": "v1.49.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/maker-bundle.git",
+                "reference": "ce1d424f76bbb377f1956cc7641e8e2eafe81cde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/ce1d424f76bbb377f1956cc7641e8e2eafe81cde",
+                "reference": "ce1d424f76bbb377f1956cc7641e8e2eafe81cde",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^2.0",
+                "nikic/php-parser": "^4.11",
+                "php": ">=8.0",
+                "symfony/config": "^5.4.7|^6.0",
+                "symfony/console": "^5.4.7|^6.0",
+                "symfony/dependency-injection": "^5.4.7|^6.0",
+                "symfony/deprecation-contracts": "^2.2|^3",
+                "symfony/filesystem": "^5.4.7|^6.0",
+                "symfony/finder": "^5.4.3|^6.0",
+                "symfony/framework-bundle": "^5.4.7|^6.0",
+                "symfony/http-kernel": "^5.4.7|^6.0",
+                "symfony/process": "^5.4.7|^6.0"
+            },
+            "conflict": {
+                "doctrine/doctrine-bundle": "<2.4",
+                "doctrine/orm": "<2.10",
+                "symfony/doctrine-bridge": "<5.4"
+            },
+            "require-dev": {
+                "composer/semver": "^3.0",
+                "doctrine/doctrine-bundle": "^2.4",
+                "doctrine/orm": "^2.10.0",
+                "symfony/http-client": "^5.4.7|^6.0",
+                "symfony/phpunit-bridge": "^5.4.17|^6.0",
+                "symfony/polyfill-php80": "^1.16.0",
+                "symfony/security-core": "^5.4.7|^6.0",
+                "symfony/yaml": "^5.4.3|^6.0",
+                "twig/twig": "^2.0|^3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\MakerBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code.",
+            "homepage": "https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html",
+            "keywords": [
+                "code generator",
+                "generator",
+                "scaffold",
+                "scaffolding"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony/maker-bundle/issues",
+                "source": "https://github.com/symfony/maker-bundle/tree/v1.49.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-06-07T13:10:14+00:00"
         },
         {
             "name": "theseer/tokenizer",
