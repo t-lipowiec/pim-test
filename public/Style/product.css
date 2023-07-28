@@ -1,0 +1,10 @@
+.appDiv{
+    width: 350px;
+    height: 450px;
+    background-color:red;
+}
+.myClass{
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
