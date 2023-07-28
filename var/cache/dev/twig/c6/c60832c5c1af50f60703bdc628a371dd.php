@@ -131,7 +131,7 @@ class __TwigTemplate_c65f358f6a46fcb1116aac390f1f1b8a extends Template
         echo "
   ";
         // line 14
-        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("app");
+        echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("main");
         echo "
 
 ";
@@ -173,7 +173,7 @@ class __TwigTemplate_c65f358f6a46fcb1116aac390f1f1b8a extends Template
 
 {% block javascripts %}
 
-  {{ encore_entry_script_tags('app') }}
+  {{ encore_entry_script_tags('main') }}
 
 {% endblock %}
 ", "main/main.html.twig", "/home/tomek/Projects/pim-test/templates/main/main.html.twig");

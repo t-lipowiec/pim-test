@@ -6,14 +6,21 @@
     use Pimcore\Controller\FrontendController;
     use Symfony\Bridge\Twig\Attribute\Template;
     use Symfony\Component\HttpFoundation\Request;
-
+    use \Pimcore\Model\DataObject;
+    use App\Form\ScentForm;
 
     class ProductController extends FrontendController
     {
-        #[Template('product/product.html.twig')]
-        public function productAction(): array
-        {
-          return [];
+
+        public function productAction(Request $request):Response{
+
+            $scent = new DataObject\Scent();
+
+            $form = $this->createForm(ScentForm::class, $scent);
+
+            return $this->render('product/product.html.twig', [
+              'form' => $form,
+            ]);
         }
 
         #[Template('product/product.html.twig')]

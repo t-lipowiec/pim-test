@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-develop-r',
+        'version' => 'dev-develop-r',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '680cfa597536c195d9c321a5cacfd563b748cda4',
         'name' => 'pimcore/skeleton',
         'dev' => true,
     ),
@@ -665,12 +665,12 @@
             'dev_requirement' => false,
         ),
         'pimcore/skeleton' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-develop-r',
+            'version' => 'dev-develop-r',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '680cfa597536c195d9c321a5cacfd563b748cda4',
             'dev_requirement' => false,
         ),
         'presta/sitemap-bundle' => array(
@@ -1290,6 +1290,15 @@
             'reference' => 'd9b01ba073c44cef617c7907ce2419f8d00d75e2',
             'dev_requirement' => false,
         ),
+        'symfony/form' => array(
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/form',
+            'aliases' => array(),
+            'reference' => '59e7c5afef32b9ff735e83e5fc74d63044833a2b',
+            'dev_requirement' => false,
+        ),
         'symfony/framework-bundle' => array(
             'pretty_version' => 'v6.3.1',
             'version' => '6.3.1.0',
@@ -1429,6 +1438,15 @@
             'install_path' => __DIR__ . '/../symfony/polyfill-intl-grapheme',
             'aliases' => array(),
             'reference' => '511a08c03c1960e08a883f4cffcacd219b758354',
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-intl-icu' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-intl-icu',
+            'aliases' => array(),
+            'reference' => 'a3d9148e2c363588e05abbdd4ee4f971f0a5330c',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-intl-idn' => array(

@@ -1,12 +1,13 @@
 {
   "entrypoints": {
-    "app": {
+    "main": {
       "js": [
-        "/build/runtime.js",
-        "/build/app.js"
+        "http://localhost:8080/build/runtime.js",
+        "http://localhost:8080/build/vendors-_yarn___virtual___mini-css-extract-plugin-virtual-af6c38d48e_0_cache_mini-css-extract-43e9f4.js",
+        "http://localhost:8080/build/main.js"
       ],
       "css": [
-        "/build/app.css"
+        "http://localhost:8080/build/main.css"
       ]
     }
   }

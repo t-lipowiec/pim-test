@@ -17,6 +17,7 @@
     "pimcore/data-hub": "^1.6",
     "pimcore/pimcore": "^11.0",
     "symfony/dotenv": "^6.2",
+    "symfony/form": "^6.3",
     "symfony/messenger": "^6.3",
     "symfony/runtime": "^6.2",
     "symfony/webpack-encore-bundle": "^1.7"
