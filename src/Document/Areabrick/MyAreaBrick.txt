@@ -1,0 +1,22 @@
+<?php
+/*
+	namespace App\Document\Areabrick;
+
+	use Pimcore\Model\Document;
+	use Pimcore\Model\Document\Editable\Area\Info;
+	use Symfony\Component\HttpFoundation\Response;
+
+	class MyAreaBrick extends AbstractAreabrick
+	{
+		public function getName(){
+			return "Academy Areabrick";
+		}
+
+		public function getDescription(){
+			return "Some Description";
+		}
+
+		public function action(Info $info){
+			return parent::action($info);
+		}
+	}

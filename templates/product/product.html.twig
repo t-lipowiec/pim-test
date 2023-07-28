@@ -1,8 +1,37 @@
 {% extends 'layout.html.twig' %}
 
+{% block stylesheets %}
+  {#  <link rel="stylesheet" type="text/css" href="Style/product.css" /> #}
+
+
+  <style>
+    .appDiv{
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+    }
+    .myClass{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+  </style>
+
+{% endblock %}
+
 {% block title %}Product{% endblock %}
 
 {% block mainSection %}
     <p>This is product page</p>
-    <div class="appDiv"></div>
+    <div class="appDiv">
+        <p>{{ pimcore_input('headline')}}</p>
+        <p>{{ pimcore_wysiwyg('content')}}</p>
+    </div>
+    <div class="myClass">
+      AAA
+    </div>
+    Change
+{% endblock %}
+{% block javascript %}
+    {{ encore_entry_script_tags('app', null, 'frontend') }}
 {% endblock %}

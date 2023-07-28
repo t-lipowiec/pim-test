@@ -1,0 +1,16 @@
+framework:
+  messenger:
+    # after retrying, messeges will be sent to the "failed" transport
+    # failure_transport: failed
+      
+      transports:
+      # ... other transports
+      # failed: 'doctrine://default?queue_name=failed'
+
+          pimcore_failed_jobs:
+              dsn: "doctrine://default?queue_name=pimcore_failed_jobs&table_name=messenger_messages_pimcore_failed"
+
+          pimcore_core:
+              dsn: "doctrine://default?queue_name=pimcore_core"
+              failure_transport: pimcore_failed_jobs
+          #async: "%env(MESSENGER_TRANSPORT_DSN)%"

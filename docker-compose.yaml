@@ -88,8 +88,25 @@ services:
             - pimcore-test-var:/var/www/html/var
             - pimcore-test-public-var:/var/www/html/public/var
 
+    elastic:
+        image: elasticsearch:8.5.3
+        environment:
+            - discovery.type=single-node
+            - ES_JAVA_OPTS=-Xms1g -Xmx1g
+            - xpack.security.enabled=true
+            - xpack.security.authc.anonymous.roles=superuser,kibana_admin,kibana_system,kibana_user
+            - ELASTIC_USERNAME=elastic
+            - ELASTIC_PASSWORD=somethingsecret
+        volumes:
+            - pimcore-elastic:/usr/share/elasticsearch/data
+        deploy:
+            resources:
+                limits:
+                    cpus: '1'
+                    memory: '2G'
 volumes:
     pimcore-database:
     pimcore-test-database:
     pimcore-test-var:
     pimcore-test-public-var:
+    pimcore-elastic:

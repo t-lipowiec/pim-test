@@ -7,14 +7,21 @@
                 Layout title
             {% endblock %}
         </title>
+        {% block stylesheets %}
+
+        {% endblock %}
     </head>
     <body>
         <nav>
             <p><a href="/">Home</a></p>
             <p><a href="/About">About</a></p>
             <p><a href="/Test">Test</a></p>
+            <p><a href="/Product">Product</a></p>
         </nav>
         {% block mainSection %}
+
+        {% endblock %}
+        {% block javascripts %}
 
         {% endblock %}
     </body>

@@ -41,7 +41,6 @@
             $asset = Asset::getById(13);
             $asset->delete();
             */
-            
             return [];
         }
     }
